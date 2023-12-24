@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: #F5F9FF;
+    padding: 100px;
+}
+.todo-app{
+    width: 1000px;
+    height: 670px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 23, 71, 0.15);
+    max-width: 800px;
+    margin: 24px auto 20px;
+    padding-top: 20px;
+    padding-bottom: 220px;
+    padding-left: 100px;
+    /* border-radius: 20px; */
+    border: blue;
+    align-items: center;
+    /* border: solid blue; */
+    height: 400px; 
+    top: 156px;
+    left: 256px;
+    border-radius: 20px;
+}
+.todo-app h1{
+    color: darkblue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #11175E;
+   font-family: Rubik;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   letter-spacing: 0.48px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 0.7;
+    border: none;
+    outline: none;
+    background: #FFF;
+    color: #B1BACB;
+    font-feature-settings: 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: 0.16px;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    width: auto 36px;
+    height: auto 20px;
+    border: none;
+    color: white;
+    background: #2D70FD;
+    border: 1px solid var(--Mavi, #2D70FD);
+    text-align: center;
+    border-radius: 4px;
+    font-feature-settings: 'liga' off;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: 0.18px;
+    padding: 16px 35px;
+}
+hr{
+    /* color: gainsboro;
+    width: 515px; */
+    width: 515px;
+    height: 1px;
+    background: #EEE;
+}
+a{
+    text-decoration: none;
+    padding-left:440px;
+    color: #B1BACB;
+    text-align: right;
+    font-feature-settings: 'liga' off;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: 0.16px;
+    /* display:none; */
+}
+span{
+    color: gainsboro;
+    font-size: 17px;
+    display: none;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li:hover{
+    color: blue;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(image/uncheck-48.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(image/checked..png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #edeef0;
+}
