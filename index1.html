@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO-APP</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -12,7 +17,7 @@
             <h1>Daily To Do List</h1>
           <div class="row">
               <input type="text" id="input-box" placeholder="Add new list item">
-              <button onclick="addTask()">Add</button>
+              <button onclick="Task()">Add</button>
           </div>
              <ul id="list-container">
                <!-- <li>Task1 1</li>
@@ -20,12 +25,10 @@
                <li>Task 3</li> -->
              </ul>
              <hr>
-                <span class="num">items selected</span>
+               <span class="get">no</span> <span>item</span>
                 <a href="" id="clear">clear all</a>
         </div>
-         
-    </div>
-    <script src="script.js"></script>
-
+</div>
+<script src="script.js"></script>
 </body>
 </html>
