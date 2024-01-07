@@ -3,9 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Inter;
+}
 .container{
     width:100%;
     min-height: 100vh;
+    display: flex;
     background: #F5F9FF;
     padding: 100px;
 }
@@ -36,7 +40,7 @@
     align-items: center;
     margin-bottom: 20px;
     color: #11175E;
-   font-family: Rubik;
+   /* font-family: Inter; */
    font-size: 48px;
    font-style: normal;
    font-weight: 600;
@@ -51,13 +55,13 @@
     margin-bottom: 25px;
 }
 input{
-    flex: 0.7;
+    flex: 0.8;
     border: none;
     outline: none;
     background: #FFF;
     color: #B1BACB;
     font-feature-settings: 'liga' off;
-    font-family: Inter;
+    /* font-family: Inter; */
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -67,8 +71,10 @@ input{
     font-weight: 14px;
 }
 button{
-    width: auto 36px;
-    height: auto 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     border: none;
     color: white;
     background: #2D70FD;
@@ -76,7 +82,7 @@ button{
     text-align: center;
     border-radius: 4px;
     font-feature-settings: 'liga' off;
-    font-family: Inter;
+    /* font-family: Inter; */
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -87,28 +93,34 @@ button{
 hr{
     /* color: gainsboro;
     width: 515px; */
-    width: 515px;
+    width: 590px;
     height: 1px;
     background: #EEE;
+    display: none;
 }
 a{
     text-decoration: none;
-    padding-left:440px;
+    padding-left:500px;
+    padding-bottom: 100px;
     color: #B1BACB;
-    text-align: right;
+    /* text-align: right; */
     font-feature-settings: 'liga' off;
-    font-family: Inter;
+    /* font-family: Inter; */
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 17.6px */
     letter-spacing: 0.16px;
-    /* display:none; */
+    display:none;
 }
 span{
     color: gainsboro;
     font-size: 17px;
     display: none;
+}
+.get{
+    color: gainsboro;
+    font-size: 17px;
 }
 ul li{
     list-style: none;
